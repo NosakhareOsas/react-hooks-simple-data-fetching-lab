@@ -10,7 +10,7 @@ function App(){
         .then(Response=>Response.json())
         .then(data=>{
             setimage((img)=>img=data.message);
-            setloading((load)=>!load);
+            setloading(true);
         })
     }, [])
 
